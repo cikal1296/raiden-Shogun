@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
@@ -11,6 +10,10 @@
 *{
   margin: 0;
   padding: 0;
+}
+body{
+  height: auto;
+  overflow-y: auto;
 }
 .bg::before {
         content: "";
@@ -21,11 +24,11 @@
         height: 100%;
         background: url("wp5.webp") no-repeat center center / cover;
         opacity: 0.3; /* Atur transparansi di sini */
-        z-index: 0; /* Di belakang konten */
+        z-index: -1; /* Di belakang konten */
       }
 .bg{
   position: relative;
-        height: 100vh;
+       min-height: 130vh;
         overflow: hidden;
  
 
@@ -52,6 +55,310 @@
   position: relative;
   border-radius: 20px ;
   width: 150px;
+  height:120px;
+  background-color: #8B5DFF;
+
+  
+  margin-left:10px;
+
+}
+.box3 , .box4 , .box5 , .box6:hover{
+ transition: 0.5s;
+  transform: rotate(360deg);
+}
+  
+.box3 , .box4 , .box5 , .box6{
+  border-radius: 50% ;
+  width: 55px;
+  height:55px;
+  background-color: #433878;
+}
+
+.skill {
+  display: flex;
+}
+
+  .jurus{
+    gap:10px;
+    margin: 4px auto;
+    
+      display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Membuat 2 kolom dengan lebar yang sama */
+   /* Memberikan jarak antar kotak */
+}
+
+  .box7{
+      display: flex;
+      align-items: center; /* Pusatkan secara vertikal */
+      pading: 10px; /* Tambahkan ruang internal */
+      border-radius: 20px;
+      width: 300px;
+      background-color: #8B5DFF;
+      margin: 10px auto;
+  }
+ 
+.p{
+ 
+color: white;
+ font-family: italic; 
+  font-size: 1.3em;
+ padding-top:10px ;
+ padding-left:10px ;
+ 
+}
+.box1:hover{
+  transition: 0.5s;
+ width:320px;
+ height:120px;
+}
+.u{
+font-size: 0.3em;
+  padding-left:10px;
+  color: #CB9DF0 ;
+}
+.box2 img{
+  position: absolute ; 
+  padding-left:10px;
+  top:-30px;
+}
+.box6{
+  background-color: white}
+.read{
+  
+  margin-top:0px;
+  margin-left:25px;
+  color:white;
+  width: 40px;
+  font-size: 0.5em;
+  border-bottom: 3px solid white;
+} 
+.logo{
+width:80px;
+height:50px;
+  position:absolute;
+  right: 20px;
+  top: -5px;
+}
+.box7 img {
+  width:50px;
+  height: 50px;
+margin-left: 10px;
+}
+.m{
+   margin-left: 10px;
+   marin-top:5px ;
+  color: white;
+}
+.n{
+  margin-left: 10px;
+   margn-top:10px ;
+  color: #CB9DF0;
+  font-size: 0.3em;
+}
+.boxi{
+  border-radius:10px;
+  background-color: #8B5DFF;
+  width: 55px;
+  height: 55px;
+  margin:12px;
+}
+.gambar{
+  left:100px;
+  display:flex;
+}
+.boxi img{
+width:55px;
+ height:55px; 
+}
+h3{
+  margin-left:10px;
+}
+nav{
+
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+  display: flex;
+}
+.bar p{
+  color:#8B5DFF;
+  font-size: 1.3em;
+}
+.bar p:hover{
+  border-bottom:3.5px solid white;
+   }
+.boks{
+  transform: translateX(-100%);
+    animation: slideIn 1.3s forwards;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.img{
+  margin-top:20px;
+  width: 100px;
+  height:170px;
+  position: absolute;
+  margin:10px 90px ;
+} 
+@keyframes slide {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-30px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.img {
+  animation: slide 5s ease-in-out infinite;
+}
+.button {
+    margin: 10px auto; /* Sesuaikan margin tombol */
+    text-align: center; /* Pusatkan tombol */
+}
+
+.button button {
+  
+  
+   z-index: 10;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #8B5DFF; /* Sesuaikan warna */
+    color: white;
+}
+
+.button button:hover {
+    background-color: #433878; /* Warna saat tombol disentuh */
+}
+
+.gambar img:hover{
+padding: 10px;
+}
+.ppp{
+margin-left:-25px;
+top:20px;
+color:#8B5DFF;
+font-size:2.5em;
+position:absolute;
+}
+.s{
+margin-left:305px;
+top:20px;
+color:#8B5DFF;
+font-size:2.5em;
+position:absolute;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.video-container {
+    position: relative;
+    margin: 20px auto;
+    text-align: center; /* Pusatkan elemen */
+}
+
+video {
+  padding-bottom: 30px;
+    width: 95%;
+    max-height: 300px;
+}
+      
+   </style>
+   <div class="bg">
+    <div class="bar">
+      <nav> 
+      <p>About</p>
+      <p>Home</p>
+      <p>Contact</p>
+      </nav>
+    </div>
+    <div class="wadah">
+      <div  data-aos="zoom-in" data-aos-delay="180" class="zoom">
+      <div class="box1">
+
+        <img src="logo.png" class="logo">
+       
+        <p class="p">Raiden Shogun</p>
+      <p class="u">The Raiden Shogun (Japanese: 雷電将軍 Raiden Shougun) <br>is a playable Electro character in Genshin Impact. The Raiden Shogun <br>is comprised of two beings in one body </p>
+    <div class="button" > <p class="read">Read More</p></div>
+      </div>
+      <div class="skill">
+      <div class="box2">
+        <img class="img" src="pedang.png">
+        <img src="sogunn.png" width="150px" height="150px">
+      </div> 
+      <div class="jurus">
+      <div class="box6"> <img src="icon.png" width="55px" height="55px"></div>
+      <div class="box6"> <img src="icon2.png" width="55px" height="55px"></div>
+      <div class="box6"> <img src="icon3.png" width="55px" height="55px"></div>
+      <div class="box6"> <img src="icon.png" width="55px" height="55px"></div>
+    </div>
+    </div>
+</div>
+      <h3>Recent Shogun :</h3>
+    <div class="boks">
+        <div class="box7">
+      <img src="icon.png" alt="Icon">
+      <div class="content">
+        <p class="m">Musou no Hitotachi</p>
+        <p class="n">This symbolizes the lightning-based strikes that are the core of Raiden Shogun's Elemental Skill.</p>
+      </div>
+    </div>
+    <div class="box7">
+      <img src="icon2.png" alt="Icon">
+      <div class="content">
+        <p class="m">Eternity's End</p>
+        <p class="n">Represents the devastating sword slashes that Raiden Shogun unleashes as part of her Elemental Burst.</p>
+      </div>
+    </div>
+    <div class="box7">
+      <img src="icon3.png" alt="Icon">
+      <div class="content">
+        <p class="m">Origin</p>
+        <p class="n">This represents the basic sword attacks that Raiden Shogun can perform in combat.</p>
+      </div>
+    </div>
+    </div>
+            <h3>Chibi :</h3>
+    <div class="gambar" >
+      <div class="boxi"><img src="cibi1.png"></div>
+      <div class="boxi"><img src="cibi2.png"></div>
+      <div class="boxi"><img src="cibi3.png"></div>
+      <div class="boxi"><img src="cibi4.png"></div>
+   
+    </div>
+    <h3>animation :<h3>
+<div class="video-container">
+    <video src="shogun.mp4" controls autoplay muted></video>
+    <div class="button">
+        <button><a href="index.html">Login</a></button>
+        <button>Sign In</button>
+    </div>
+</div>
+
+  </div>
+     
+    </div>
+    </div>
+    
+    <script>
+   AOS.init(); </script>
+    </body>
+  </html>
   height:120px;
   background-color: #8B5DFF;
 
