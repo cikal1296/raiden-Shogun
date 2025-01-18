@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <style>
 *{
   margin: 0;
@@ -27,7 +28,7 @@ body{
       }
 .bg{
   position: relative;
-       min-height: 130vh;
+       min-height: 200vh;
         overflow: hidden;
 }
 .wadah{
@@ -43,7 +44,7 @@ body{
   background-color: #8B5DFF;
   justify-content: center;
   margin: 5px auto;
-
+  position: relative;
 }
 .box2 {
   position: relative;
@@ -51,8 +52,6 @@ body{
   width: 150px;
   height:120px;
   background-color: #8B5DFF;
-
-  
   margin-left:10px;
 
 }
@@ -69,7 +68,8 @@ body{
 }
 
 .skill {
-  display: flex;
+   display: flex;
+      align-items: center;
 }
 
   .jurus{
@@ -288,7 +288,9 @@ video {
       <p class="u">The Raiden Shogun (Japanese: 雷電将軍 Raiden Shougun) <br>is a playable Electro character in Genshin Impact. The Raiden Shogun <br>is comprised of two beings in one body </p>
     <div class="button" > <p class="read">Read More</p></div>
       </div>
+      
       <div class="skill">
+        
       <div class="box2">
         <img class="img" src="pedang.png">
         <img src="sogunn.png" width="150px" height="150px">
@@ -335,9 +337,20 @@ video {
     <h3>animation :</h3>
 <div class="video-container">
     <video src="shogun.mp4" controls autoplay muted></video>
+        <div class="model">
+          <h2><i>3D model</i></h2>
+      <center>
+    <model-viewer style="width:400px; height:400px;  " src="raiden_shogun_2.glb" camera-controls 
+  auto-rotate 
+  rotation-per-second="50deg" 
+  environment-image="neutral" 
+  exposure="5" 
+  background-color="#202020" 
+  shadow-intensity="2"></model-viewer>
+    </center></div>
     <div class="button">
         <button><a href="index.html">Login</a></button>
-        <button>Sign In</button>
+        <button><a href="zrii.vercel.app">Profile</a></button>
     </div>
 </div>
     </div> 
